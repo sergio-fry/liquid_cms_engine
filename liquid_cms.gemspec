@@ -5,7 +5,7 @@ require "liquid_cms/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "liquid_cms"
+  s.name        = "liquid_cms_engine"
   s.version     = LiquidCms::VERSION
   s.authors     = ["Sergei O. Udalov"]
   s.email       = ["sergei.udalov@gmail.com"]
