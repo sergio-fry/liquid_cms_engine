@@ -1,4 +1,6 @@
 module LiquidCms
+  # Render TextBlock by key 'footer':
+  # {% text_block footer %}
   class TextBlockLiquid < Liquid::Tag
     def initialize(tag_name, text_block_key, tokens)
       super

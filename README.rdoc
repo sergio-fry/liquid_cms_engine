@@ -1,3 +1,8 @@
 = LiquidCms
 
-This project rocks and uses MIT-LICENSE.
+Content Management System.
+
+Feature list:
+* shared text blocks
+* Liquid template system
+* browser specific blocks
