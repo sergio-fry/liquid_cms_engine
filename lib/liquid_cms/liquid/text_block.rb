@@ -8,7 +8,7 @@ module LiquidCms
 
     def render(context)
       if @text_block.present?
-        @text_block.body
+        Liquid::Template.parse(@text_block.body).render({})
       else
         "{ text block '#{@text_block_key}' is missing }"
       end
