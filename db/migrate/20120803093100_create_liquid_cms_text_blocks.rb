@@ -6,5 +6,7 @@ class CreateLiquidCmsTextBlocks < ActiveRecord::Migration
 
       t.timestamps
     end
+
+    add_index :liquid_cms_text_blocks, :key, :unique => true
   end
 end
