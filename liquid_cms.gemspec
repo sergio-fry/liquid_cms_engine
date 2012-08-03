@@ -7,10 +7,10 @@ require "liquid_cms/version"
 Gem::Specification.new do |s|
   s.name        = "liquid_cms"
   s.version     = LiquidCms::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
+  s.authors     = ["Sergei O. Udalov"]
+  s.email       = ["sergei.udalov@gmail.com"]
   s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of LiquidCms."
+  s.summary     = "CMS Liquid with liquid."
   s.description = "TODO: Description of LiquidCms."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
