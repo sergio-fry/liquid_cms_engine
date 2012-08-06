@@ -5,7 +5,7 @@ require "liquid_cms/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "liquid_cms_engine"
+  s.name        = "liquid_cms"
   s.version     = LiquidCms::VERSION
   s.authors     = ["Sergei O. Udalov"]
   s.email       = ["sergei.udalov@gmail.com"]
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 3.2.3"
+  s.add_dependency "rails", "~> 3.1.0"
   s.add_dependency "liquid"
   s.add_dependency "browser"
   # s.add_dependency "jquery-rails"
