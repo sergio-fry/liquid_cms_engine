@@ -8,7 +8,7 @@ module LiquidCms
       @text_block_key = arguments.strip.split.first
       @text_block = TextBlock.find_by_key(@text_block_key)
 
-      variables_array = arguments.scan(/([a-z]+)="([^"]*)"/).flatten
+      variables_array = arguments.scan(/([a-z0-9_]+)="([^"]*)"/i).flatten
       @variables = Hash[*variables_array]
     end
 
