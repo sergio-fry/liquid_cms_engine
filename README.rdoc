@@ -6,3 +6,11 @@ Feature list:
 * shared text blocks
 * Liquid template system
 * browser specific blocks
+
+== Text Blocks
+
+Render text block with slug 'header':
+  {% text_block header %}
+
+Pass some variables to text block:
+  {% text_block 'product' name="Mouse R200" price="340 RUR"

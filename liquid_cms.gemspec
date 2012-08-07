@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = LiquidCms::VERSION
   s.authors     = ["Sergei O. Udalov"]
   s.email       = ["sergei.udalov@gmail.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "http://github.com/sergio-fry/liquid_cms_engine"
   s.summary     = "CMS Liquid with liquid."
-  s.description = "TODO: Description of LiquidCms."
+  s.description = "CMS for internal usage."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
