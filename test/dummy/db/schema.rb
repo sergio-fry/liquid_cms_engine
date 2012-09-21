@@ -11,14 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120806150342) do
+ActiveRecord::Schema.define(:version => 20120803095142) do
 
   create_table "liquid_cms_pages", :force => true do |t|
     t.string   "slug"
     t.string   "title"
     t.text     "body"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   add_index "liquid_cms_pages", ["slug"], :name => "index_liquid_cms_pages_on_slug", :unique => true
@@ -26,8 +26,8 @@ ActiveRecord::Schema.define(:version => 20120806150342) do
   create_table "liquid_cms_text_blocks", :force => true do |t|
     t.string   "key"
     t.text     "body"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   add_index "liquid_cms_text_blocks", ["key"], :name => "index_liquid_cms_text_blocks_on_key", :unique => true
