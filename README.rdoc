@@ -13,4 +13,53 @@ Render text block with slug 'header':
   {% text_block header %}
 
 Pass some variables to text block:
-  {% text_block 'product' name="Mouse R200" price="340 RUR"
+  {% text_block 'product' name="Mouse R200" price="340 RUR" %}
+
+
+== Browser specific text
+
+Render block only if user browser matches 
+specified conditions:
+
+    {% browser webkit %}
+      Only Webkit
+    {% endbrowser %}
+
+    {% browser windows firefox %}
+      Only Windows Firefox
+    {% endbrowser %}
+
+    {% browser chrome !android %}
+      Chrome not Android
+    {% endbrowser %}
+
+Full list of conditions:
+  * capable - Return true if browser supports some CSS 3 (Safari, Firefox, Opera & IE7+).
+  * webkit
+  * ios
+  * mobile
+  * quicktime - Detect if browser is QuickTime
+  * blackberry
+  * core_media - Detect if browser is Apple CoreMedia.
+  * iphone
+  * ipad
+  * ipod
+  * tablet - Detect if browser is tablet (currently just iPad or Android).
+  * safari
+  * firefox
+  * chrome
+  * ie
+  * ie6
+  * ie7
+  * ie8
+  * ie9
+  * psp
+  * opera
+  * mac
+  * windows
+  * linux
+  * android
+
+== Rails 3.1.x
+
+Please use branch rails_3.1.x
